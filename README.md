@@ -44,7 +44,7 @@ Each folder has its own `README.md` with details.
 ## Installation
 
 ```sh
-git clone https://github.com/<your-username>/solux-dots.git
+git clone https://github.com/nszmak35/solux-dots.git
 cd solux-dots
 
 # Copy (or symlink) the folders you want into ~/.config
