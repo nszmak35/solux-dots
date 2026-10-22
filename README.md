@@ -59,4 +59,3 @@ Back up your existing configs before overwriting them.
 
 - Rofi layout forked from [Zproger/bspwm-dotfiles](https://github.com/Zproger/bspwm-dotfiles/tree/main/config/rofi)
 - Font: [Libertinus](https://github.com/alerque/libertinus)
-- Neovim plugins in `nvim/plugged` belong to their respective authors
