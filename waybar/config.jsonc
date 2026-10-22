@@ -1,0 +1,114 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 30,
+    "spacing": 0,
+
+    "margin-top": 0,
+    "margin-bottom": 10,
+    "margin-left": 420,
+    "margin-right": 420,
+    
+    "modules-left": [
+        "custom/logo",
+        "dwl/tags",
+        "dwl/window",
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "custom/language",
+        "battery",
+        "custom/browser",
+        "network",
+        "custom/power",
+        "tray"
+    ],
+    
+    "custom/logo": {
+        "format": "", 
+        "tooltip": false,
+        "on-click": "rofi -show drun -theme ~/.config/rofi/we.rasi.d"
+    },
+
+    "custom/browser": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "pavucontrol"
+    },
+
+    "dwl/tags": {
+        "num-tags": 9,
+        "hide-vacant": false
+    },
+
+	"custom/window": {
+        "exec": "tail -F -n 1 /tmp/solux_active_window_title",
+        "tail": true,
+        "max-length": 15,
+        "format": "{}",
+        "tooltip": false
+    },
+
+	"dwl/window": {
+	    "max-length": 30,
+	    "format": "[ {layout} ] {title} ",
+			"on-click": "soluxctl set-layout",
+			"tooltip": false
+	},
+
+    "clock": {
+        "format": "{:L%A %H:%M}",
+        "interval": 1,
+        "tooltip": false
+    },
+
+	"custom/language": {
+        "exec": "soluxctl watch-kblayout",
+        "reatart-interval": 1,
+				"return-type": "string",
+        "format": "{}",
+				"on-click": "soluxctl set-kblayout",
+        "tooltip": false
+    },
+    
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "tooltip-format": "{timeTo} ({capacity}%)"
+    },
+
+    "custom/voice": {
+    	"format": "",
+    	"tooltip": false,
+    	"on-click": "pavucontrol"
+	},
+
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰤮",
+        "on-click": "nm-connection-editor",
+        "tooltip": false
+    },
+
+    "tray": {
+    	"icon-size": 24,
+    	"spacing": 10
+    },
+
+    "custom/power": {
+        "format": "",
+        "on-click": "~/.config/mango/waybar/scripts/power-menu.sh",
+        "tooltip": false
+    }
+}

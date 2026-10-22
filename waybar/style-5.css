@@ -1,0 +1,182 @@
+@define-color base      #14171D;
+@define-color mantle    #1C2027;
+@define-color crust     #14171D;
+@define-color text      #D2D3CE;
+@define-color subtext0  #9C9E9E;
+@define-color mauve     #8A9FAD;
+@define-color surface0  #2A2F38;
+@define-color border    #596070;
+@define-color green     #84916A;
+@define-color warning   #B0A883;
+
+* {
+    font-family: "Libertinus Mono", sans-serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 0px;
+    min-height: 0;
+}
+
+window#waybar,
+window#waybar.empty,
+window#waybar.solo,
+#custom-window {
+    background: #14171D;
+    background-color: #14171D;
+    color: @mauve;
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#custom-logo,
+#custom-browser {
+    color: @mauve;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+#tags button {
+    padding: 0 8px;
+    margin: 0;
+		border-radius: 0px;
+    min-width: 0;
+    box-shadow: none;
+    color: @subtext0;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    font-size: 11px;
+    opacity: 1;
+    transition: all 0.15s ease-in-out;
+}
+
+#tags button.occupied {
+    color: @text;
+    border-bottom: 2px solid transparent;
+}
+
+#tags button.focused,
+#tags button.selected,
+#tags button.active,
+#tags button:checked {
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
+}
+
+#tags button:hover {
+    background-color: rgba(138, 159, 173, 0.10);
+    color: @mauve;
+}
+
+#workspaces,
+#workspaces button,
+#workspaces button label {
+    min-width: 0;
+    min-height: 0;
+    padding: 0 3px;
+    margin: 0 1px;
+    box-shadow: none;
+}
+
+#workspaces button {
+    color: @subtext0;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    color: @text;
+    border-bottom: 2px solid @mauve;
+}
+
+#workspaces button:hover {
+    background-color: @surface0;
+    color: @text;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background: #14171D;
+    background-color: #14171D;
+    border-radius: 0px;
+}
+
+.modules-left > widget,
+.modules-center > widget,
+.modules-right > widget {
+    background-color: transparent;
+    margin: 0 3px;
+    padding: 0 4px;
+}
+
+.modules-left > widget:first-child,
+.modules-center > widget:first-child,
+.modules-right > widget:first-child {
+    margin-left: 0;
+}
+
+.modules-left > widget:last-child,
+.modules-center > widget:last-child,
+.modules-right > widget:last-child {
+    margin-right: 0;
+}
+
+#custom-mangolayout {
+    color: @subtext0;
+    padding-left: 8px;
+}
+
+#battery {
+    color: @text;
+    padding: 0 4px;
+}
+
+#clock {
+    color: @text;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+#network {
+    padding: 0 7px;
+    font-size: 16px;
+    color: @mauve;
+}
+
+#custom-language {
+    color: @text;
+    padding-left: 2px;
+    padding-right: 6px;
+    font-size: 14px;
+}
+
+#tray {
+    background: transparent;
+    color: @text;
+    padding: 0px 4px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#custom-power {
+    color: @mauve;
+    padding-left: 7px;
+    padding-right: 14px;
+    font-size: 16px;
+}
+
+#custom-voice {
+    color: @mauve;
+    padding-right: 2px;
+    font-size: 16px;
+}

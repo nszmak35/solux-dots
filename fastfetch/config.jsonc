@@ -1,0 +1,113 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+
+    "logo": {
+        "type": "builtin",
+        "source": "void",
+        "color": {
+            "1": "#8A9FAD",
+            "2": "#B0A883",
+            "3": "#9C9E9E",
+            "4": "#596070",
+            "5": "#D2D3CE"
+        }
+    },
+
+    "display": {
+        "color": {
+            "separator": "#8A9FAD"
+        },
+        "separator": " \ue0b0 "
+    },
+
+    "modules": [
+        {
+            "type": "title",
+            "color": {
+                "user": "#8A9FAD",
+                "host": "#9C9E9E",
+                "at": "#B0A883",
+                "separator": "#596070"
+            }
+        },
+        {
+            "type": "separator",
+            "text": "  "
+        },
+        {
+            "type": "os",
+            "keyColor": "#8A9FAD"
+        },
+        {
+            "type": "host",
+            "keyColor": "#9C9E9E"
+        },
+        {
+            "type": "kernel",
+            "keyColor": "#8A9FAD"
+        },
+        {
+            "type": "uptime",
+            "keyColor": "#9C9E9E"
+        },
+        {
+            "type": "packages",
+            "keyColor": "#B0A883"
+        },
+        {
+            "type": "shell",
+            "keyColor": "#9C9E9E"
+        },
+        {
+            "type": "de",
+            "keyColor": "#8A9FAD"
+        },
+        {
+            "type": "wm",
+            "keyColor": "#B0A883"
+        },
+        {
+            "type": "icons",
+            "keyColor": "#9C9E9E"
+        },
+        {
+            "type": "font",
+            "keyColor": "#D2D3CE"
+        },
+        {
+            "type": "cursor",
+            "keyColor": "#9C9E9E"
+        },
+        {
+            "type": "terminal",
+            "keyColor": "#8A9FAD"
+        },
+        {
+            "type": "terminalfont",
+            "keyColor": "#9C9E9E"
+        },
+        {
+            "type": "cpu",
+            "keyColor": "#B0A883"
+        },
+        {
+            "type": "memory",
+            "keyColor": "#8A9FAD"
+        },
+        {
+            "type": "disk",
+            "keyColor": "#9C9E9E"
+        },
+        {
+            "type": "battery",
+            "keyColor": "#97A47E"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "colors",
+            "palette": true
+        }
+    ]
+}

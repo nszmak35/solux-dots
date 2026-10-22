@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=greymon
+Comment=Dark GTK theme, tre-cime palette matching foot/waybar
+Encoding=UTF-8
+GtkTheme=greymon

@@ -1,0 +1,197 @@
+@define-color bg #14171D;
+@define-color surface #1C2027;
+@define-color surface2 #2A2F38;
+@define-color text #D2D3CE;
+@define-color subtext #9C9E9E;
+@define-color accent #8A9FAD;
+@define-color accent2 #8A9FAD;
+@define-color border #596070;
+@define-color red #AB8E89;
+@define-color green #84916A;
+@define-color yellow #B0A883;
+
+* {
+    color: @text;
+    caret-color: @accent;
+}
+window, .background {
+    background-color: @bg;
+    color: @text;
+}
+label { color: @text; }
+.dim-label { color: @subtext; }
+
+button {
+    background-color: @surface;
+    color: @text;
+    border: none;
+    border-radius: 0;
+    padding: 5px 10px;
+    min-height: 16px;
+    box-shadow: none;
+}
+button:hover {
+    background-color: @surface2;
+}
+button:active, button:checked {
+    background-color: @accent2;
+    color: @bg;
+}
+button:focus {
+    box-shadow: inset 0 0 0 1px @accent;
+}
+button.suggested-action {
+    background-color: @accent;
+    color: @bg;
+}
+
+entry, spinbutton, combobox button {
+    background-color: @surface2;
+    color: @text;
+    border: 1px solid @border;
+    border-radius: 0;
+    padding: 8px 10px;
+    min-height: 18px;
+    box-shadow: none;
+}
+entry:focus, spinbutton:focus, combobox button:focus {
+    box-shadow: inset 0 0 0 1px @accent;
+}
+
+menu, .menu, popover, .context-menu {
+    background-color: @surface;
+    color: @text;
+    border: 1px solid @border;
+    border-radius: 0;
+    padding: 4px;
+}
+menuitem, .menuitem, modelbutton {
+    color: @text;
+    border-radius: 0;
+    padding: 5px 8px;
+    margin: 1px 0;
+}
+menuitem:hover, .menuitem:hover, modelbutton:hover {
+    background-color: @surface2;
+}
+
+.view, treeview, iconview {
+    background-color: @bg;
+    color: @text;
+}
+.view:selected, treeview:selected, iconview:selected {
+    background-color: @accent;
+    color: @bg;
+}
+.view:hover, treeview:hover {
+    background-color: @surface2;
+}
+
+scale trough, progressbar trough {
+    background-color: @surface2;
+    border-radius: 999px;
+    min-height: 8px;
+}
+scale highlight, progressbar progress {
+    background-color: @accent;
+    border-radius: 999px;
+}
+scale slider {
+    background-color: @accent;
+    border: 2px solid @bg;
+    min-width: 14px;
+    min-height: 14px;
+    border-radius: 999px;
+}
+
+scrollbar slider {
+    background-color: @border;
+    border-radius: 999px;
+    min-width: 9px;
+    min-height: 9px;
+    margin: 3px;
+}
+scrollbar slider:hover { background-color: @accent2; }
+
+switch {
+    background-color: @surface2;
+    border: 1px solid @border;
+    border-radius: 999px;
+    min-width: 40px;
+    min-height: 22px;
+}
+switch:checked {
+    background-color: @accent2;
+    border-color: @accent2;
+}
+switch slider {
+    background-color: @text;
+    border-radius: 999px;
+    min-width: 18px;
+    min-height: 18px;
+}
+
+separator {
+    background-color: @surface2;
+    min-width: 1px;
+    min-height: 1px;
+}
+tooltip {
+    background-color: @surface;
+    color: @text;
+    border: 1px solid @border;
+    border-radius: 0;
+    padding: 7px 9px;
+}
+selection {
+    background-color: @accent;
+    color: @bg;
+}
+
+headerbar {
+    background-color: @surface;
+    color: @text;
+    border-bottom: 1px solid @border;
+    box-shadow: none;
+    padding: 8px 12px;
+    min-height: 42px;
+}
+list, listview, row { background-color: @bg; color: @text; }
+row {
+    border-radius: 0;
+    padding: 4px;
+    margin: 1px 2px;
+}
+row:hover { background-color: @surface; }
+row:selected { background-color: @accent; color: @bg; }
+
+spinbutton button, spinbutton button:hover {
+    background-color: @surface;
+    border-radius: 0;
+    box-shadow: none;
+}
+spinbutton button:hover { background-color: @surface2; }
+
+.error, entry.error { color: @red; }
+.success { color: @green; }
+.warning { color: @yellow; }
+
+@define-color window_bg_color @bg;
+@define-color window_fg_color @text;
+@define-color view_bg_color @bg;
+@define-color view_fg_color @text;
+@define-color headerbar_bg_color @surface;
+@define-color headerbar_fg_color @text;
+@define-color card_bg_color @surface;
+@define-color popover_bg_color @surface;
+@define-color accent_bg_color @accent;
+@define-color accent_fg_color @bg;
+@define-color accent_color @accent;
+@define-color theme_bg_color @bg;
+@define-color theme_fg_color @text;
+@define-color theme_base_color @bg;
+@define-color theme_text_color @text;
+@define-color theme_selected_bg_color @accent;
+@define-color theme_selected_fg_color @bg;
+@define-color insensitive_bg_color @surface;
+@define-color borders @border;
