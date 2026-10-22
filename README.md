@@ -44,8 +44,8 @@ Each folder has its own `README.md` with details.
 ## Installation
 
 ```sh
-git clone https://github.com/<your-username>/solux-dotfiles.git
-cd solux-dotfiles
+git clone https://github.com/<your-username>/solux-dots.git
+cd solux-dots
 
 # Copy (or symlink) the folders you want into ~/.config
 cp -r foot waybar rofi qutebrowser fastfetch nvim kwsh solux ~/.config/
